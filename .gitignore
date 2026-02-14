@@ -1,0 +1,8 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+
+src/controllers/admin.controller.ts
+src/routes/admin.route.ts
