@@ -1,5 +1,5 @@
 import express from 'express';
-import { loginController, logoutController } from '../controllers/auth.controller';
+import { loginController, logoutController } from '../controllers/auth.controller.js';
 
 const route = express();
 

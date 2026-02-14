@@ -6,3 +6,6 @@ node_modules
 
 src/controllers/admin.controller.ts
 src/routes/admin.route.ts
+
+dist/
+

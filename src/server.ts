@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 // Import Routes
 // import adminRoutes from './routes/admin.route';
-import authRoutes from './routes/auth.routes';
+import authRoutes from './routes/auth.routes.js';
 
 // Middleware
 app.use(express.json());
