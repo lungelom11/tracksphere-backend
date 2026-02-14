@@ -15,6 +15,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use ('/api', authRoutes);
 
 
+//defaul endpoint
+app.get('/', (req, res) => {
+  res.send('Welcome to the Tracksphere API');
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 }); 
