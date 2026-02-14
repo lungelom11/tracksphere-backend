@@ -8,8 +8,9 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "nodemon",
-    "build": "prisma generate && tsc",
-    "start": "node dist/server.js"
+    "build": "npx prisma generate && tsc",
+    "start": "node dist/server.js",
+    "postinstall": "prisma generate"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",

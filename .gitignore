@@ -2,7 +2,8 @@ node_modules
 # Keep environment variables out of version control
 .env
 
-/generated/prisma
+# Prisma generated files (client lives in node_modules/@prisma/client)
+generated/
 
 src/controllers/admin.controller.ts
 src/routes/admin.route.ts

@@ -1,7 +1,7 @@
 import 'dotenv/config'
-import { PrismaClient } from "@prisma/client/extension";
 import { PrismaNeon } from '@prisma/adapter-neon'
-
+import { PrismaClient } from '../generated/prisma/edge.js'
+// use `prisma` in your application to read and write data in your DB// use `prisma` in your application to read and write data in your DB
 const adapter = new PrismaNeon({
   connectionString: process.env.DATABASE_URL!,
 })
