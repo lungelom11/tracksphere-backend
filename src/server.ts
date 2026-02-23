@@ -10,7 +10,7 @@ app.use(cors({
   credentials: true
 }))
 // Import Routes
-import adminRoutes from "./routes/admin.route.js";
+// import adminRoutes from "./routes/admin.route.js";
 import authRoutes from "./routes/auth.routes.js";
 
 
@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.use("/api", adminRoutes);
+// app.use("/api", adminRoutes);
 app.use("/api", authRoutes);
 app.use("/api/health", (req, res) => {
   res.status(200).json({ status: "OK", message: "API is healthy" });
