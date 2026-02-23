@@ -3,7 +3,7 @@ import cors from "cors";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const allowedOrigins = ["http://localhost:5173", "https://tracksphere-backend-npmh.onrender.com"];
+const allowedOrigins = ["http://localhost:5173", "https://tracksphere-client.netlify.app"];
 
 app.use(cors({
   origin: allowedOrigins,
